@@ -32,6 +32,7 @@ cd ~/ros2_ws/ ;colcon build --packages-select <PKG_NAME>;source install/setup.ba
 ## For nodes:
 ```
 ros2 run <PKG_NAME> <NODE_NAME> --ros-args
+ros2 run <PKG_NAME> <NODE_NAME> --log-level debug
 ros2 run <PKG_NAME> <NODE_NAME> --ros-args <ARGUMENT>:=<VALUE>
 ros2 launch <PKG_NAME> <LAUNCH_FILE_NAME> --show-args
 ros2 launch <PKG_NAME> <LAUNCH_FILE_NAME> <ARGUMENT>:=<VALUE>
