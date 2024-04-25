@@ -1,9 +1,10 @@
-# commands-sheet
+# Commands Sheet for Robotics
 Commands Sheet for Robotics:
 
 - [GIT commands](git-commands.md)
 - [ROS1 commands](ros1-commands.md)
   - [ROS1 gazebo](ros1-gazebo.md)
+  - [ROS web](ros-web.md)
 - [ROS2 commands](ros2-commands.md)
   - [ROS2 QOS](ros2-qos.md)
   - [ROS2 lifecycle](ros2-lifecycle.md)
@@ -11,7 +12,6 @@ Commands Sheet for Robotics:
   - [ROS2 Nav2](ros2-nav2.md)
   - [ROS2 Moveit2](ros2-moveit2.md)
   - [ROS2 control](ros2-control.md)
-  - [ROS2 web](ros2-web.md)
 - [RQT](rqt-commands.md)
 - [Docker commands](docker-commands.md)
 - [Testing commands](testing-commands.md)
