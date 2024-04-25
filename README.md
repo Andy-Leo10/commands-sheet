@@ -1,13 +1,9 @@
 # commands-sheet
-Commands Sheet for Robotics
+Commands Sheet for Robotics:
 
-[Link Text](git-commands.md)
-
-<details>
-<summary>Click to expand!</summary>
-
-```markdown
-# commands-sheet
-Commands Sheet for Robotics
-
-[Link Text](git-commands.md)
+- <big>[GIT commands](git-commands.md)</big>
+- <big>[ROS1 commands](ros1-commands.md)</big>
+- <big>[ROS2 commands](ros2-commands.md)</big>
+- <big>[Docker commands](docker-commands.md)</big>
+- <big>[Testing commands](testing-commands.md)</big>
+- <big>[Jenkins commands](jenkins-commands.md)</big>
