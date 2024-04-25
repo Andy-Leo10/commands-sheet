@@ -8,6 +8,7 @@
 ## For opening:
 ```
 gazebo
+roslaunch gazebo_ros empty_world.launch world_name:=<WORLD_NAME>
 ```
 
 ## For closing:
