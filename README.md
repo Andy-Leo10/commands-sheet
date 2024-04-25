@@ -1,6 +1,7 @@
 # Commands Sheet for Robotics
 Commands Sheet for Robotics:
 
+- [Linux commands](linux-commands.md)
 - [GIT commands](git-commands.md)
 - [ROS1 commands](ros1-commands.md)
   - [ROS1 gazebo](ros1-gazebo.md)
