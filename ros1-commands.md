@@ -1,8 +1,18 @@
 # ROS1 commands
 
+- [ROS1 commands](#ros1-commands)
+  - [For general use:](#for-general-use)
+  - [For compiling:](#for-compiling)
+  - [For compiling certain package:](#for-compiling-certain-package)
+  - [For nodes:](#for-nodes)
+  - [For messages:](#for-messages)
+  - [For parameters:](#for-parameters)
+  - [For packages:](#for-packages)
+
 ## For general use:
 ```
 roscd <PKG_NAME>
+catkin create pkg <PKG_NAME> --catkin-deps <DEPENDENCIES>
 roscore
 rostopic list
 rostopic info <TOPIC_NAME>

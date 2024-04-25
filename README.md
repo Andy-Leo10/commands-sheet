@@ -9,3 +9,8 @@ Commands Sheet for Robotics:
 - [Docker commands](docker-commands.md)
 - [Testing commands](testing-commands.md)
 - [Jenkins commands](jenkins-commands.md)
+
+```
+sudo apt-get update
+sudo apt-get install ros-<DISTRO>-<PACKAGE_NAME>
+```
