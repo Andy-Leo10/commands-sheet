@@ -28,10 +28,10 @@ ros2 run controller_manager spawner <CONTROLLER_NAME> --controller-type <CONTROL
 
 ## Derivation
 $$
-\text{{derivative}} = \frac{{\text{{error}} - \text{{previous\_error}}}}{{\text{{step\_time}}[s]}}
+\text{derivative} = \frac{\text{error} - {\text{previous}}_\text{error}} {\text{step}\text{time}[s]}
 $$
 
 ## Integration
 $$
-\text{{integral}} = \text{{integral}} + \text{{error}} \times \text{{step\_time}}[s]
+\text{integral} = \text{integral} + \text{error} \times {\text{step}}_{\text{time}}[s]
 $$
