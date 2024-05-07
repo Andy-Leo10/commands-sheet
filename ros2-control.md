@@ -11,7 +11,7 @@
 ```
 ros2 control list_controller_types
 ros2 control list_controllers # list active controllers
-ros2 contro list_hardware_interfaces # list joint measurements
+ros2 control list_hardware_interfaces # list joint measurements
 ```
 
 ## For managing controllers:
