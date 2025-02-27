@@ -1,8 +1,9 @@
 # Docker
 
 - [Docker](#docker)
+  - [Super summary:](#super-summary)
   - [For installation:](#for-installation)
-    - [For setup docket at 1st time:](#for-setup-docket-at-1st-time)
+    - [For setup docker at 1st time:](#for-setup-docker-at-1st-time)
   - [For general use:](#for-general-use)
   - [For build and manage images files:](#for-build-and-manage-images-files)
   - [Full cleanup (*my preference*):](#full-cleanup-my-preference)
@@ -16,6 +17,13 @@
   - [For network:](#for-network)
   - [For bind mount:](#for-bind-mount)
 
+## Super summary:
+```
+sudo docker build -f <dockerfile> -t <image_name> .
+docker-compose -f <docker-compose-file> up --build
+docker exec -it <container_name> /bin/bash
+```
+
 ## For installation:
 ```
 sudo apt-get update
@@ -23,7 +31,7 @@ sudo apt-get install docker.io docker-compose -y
 sudo service docker start
 ```
 
-### For setup docket at 1st time:
+### For setup docker at 1st time:
 ```
 sudo usermod -aG docker $USER
 newgrp docker

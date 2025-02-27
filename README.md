@@ -18,6 +18,11 @@ Commands Sheet for Robotics:
 - [Docker commands](docker-commands.md)
 - [Testing commands](testing-commands.md)
 - [Jenkins commands](jenkins-commands.md)
+- [Robotics references](references-general.md)
+  - [List of robots](references-robots.md)
+  - [List of Ignition](references-ignition.md)
+  - [List of Gazebo Sim]()
+- [GPU](gpu-general.md)
 
 ```
 sudo apt-get update

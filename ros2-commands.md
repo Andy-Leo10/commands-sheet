@@ -2,12 +2,13 @@
 
 - [ROS2 commands](#ros2-commands)
   - [For general use:](#for-general-use)
+  - [Update dependencies](#update-dependencies)
+  - [Set environment variables](#set-environment-variables)
   - [For compiling:](#for-compiling)
   - [For compiling certain package:](#for-compiling-certain-package)
   - [For nodes:](#for-nodes)
   - [For messages:](#for-messages)
   - [Useful tools:](#useful-tools)
-  - [Maybe useful:](#maybe-useful)
 
 ## For general use:
 ```
@@ -19,14 +20,37 @@ ros2 topic info <TOPIC_NAME>
 ros2 topic hz <TOPIC_NAME>
 ```
 
-## For compiling:
+## Update dependencies
 ```
-cd ~/ros2_ws/ ;colcon build;source install/setup.bash
+cd ~/ros2_ws/;
+rosdep init && rosdep update;
+sudo apt update;
+rosdep install --from-paths src --ignore-src -r -y --skip-keys='ros-humble-warehouse-ros-mongo' || true
+```
+
+## Set environment variables
+```
+echo 'export IGN_GAZEBO_RESOURCE_PATH=$IGN_GAZEBO_RESOURCE_PATH:/<PATH>' >> /etc/bash.bashrc
+source /etc/bash.bashrc 
+echo $IGN_GAZEBO_RESOURCE_PATH
+```
+
+## For compiling:
+Normal
+```
+cd ~/ros2_ws/;
+colcon build;
+source install/setup.bash
+```
+Hiding logs
+```
+colcon build --packages-select <PKG> 2> /dev/null
 ```
 
 ## For compiling certain package:
 ```
-cd ~/ros2_ws/ ;colcon build --packages-select <PKG_NAME>;source install/setup.bash
+cd ~/ros2_ws/;
+colcon build --packages-select <PKG_NAME>;source install/setup.bash
 ```
 
 ## For nodes:
@@ -76,9 +100,4 @@ ros2 run tf2_tools view_frames # For visualizing the frames in .pdf file
 ros2 run tf2_tools tf2_echo <FRAME_REFERENCE> <FRAME_TARGET> # For getting the transform between two frames
 ros2 run tf2_tools tf2_monitor <FRAME_REFERENCE> <FRAME_TARGET> # For monitoring the transform between two frames
 ros2 run rqt_tf_tree rqt_tf_tree # For visualizing the tf tree
-```
-
-## Maybe useful:
-```
-*source /home/simulations/ros2_sims_ws/install/setup.bash
 ```

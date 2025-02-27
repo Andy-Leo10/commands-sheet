@@ -8,6 +8,7 @@
   - [For highlighting:](#for-highlighting)
   - [For deleting modifications:](#for-deleting-modifications)
   - [For new GitHub repo:](#for-new-github-repo)
+  - [Git Alias](#git-alias)
 
 
 ## For general use:
@@ -65,4 +66,11 @@ git reset --hard <COMMIT_HASH>
 git remote add origin <REPO_URL>
 git branch -M main
 git push -u origin main
+```
+
+## Git Alias
+```
+git config --global alias.company '!git config user.name "Your Company Name" && git config user.email "your_company_email@example.com"'
+
+git config --global alias.personal '!git config user.name "Your Personal Name" && git config user.email "your_personal_email@example.com"'
 ```
